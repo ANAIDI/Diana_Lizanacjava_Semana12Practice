@@ -1,0 +1,19 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <label for="id">ID:</label>
+    <input type="number" id="id" formControlName="id" required>
+  
+    <label for="nombre">Nombre del Curso:</label>
+    <input type="text" id="nombre" formControlName="nombre" required>
+  
+    <label for="horas">Horas:</label>
+    <input type="number" id="horas" formControlName="horas" required>
+  
+    <label for="creditos">Créditos:</label>
+    <input type="number" id="creditos" formControlName="creditos" required>
+  
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" formControlName="categoria" required>
+  
+    <button type="submit">Guardar Curso</button>
+  </form>
+  

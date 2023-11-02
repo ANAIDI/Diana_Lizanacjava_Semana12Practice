@@ -1,0 +1,12 @@
+.pie-container {
+    background-color: black; 
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  .author-info {
+    font-size: 30px; 
+  }
+  

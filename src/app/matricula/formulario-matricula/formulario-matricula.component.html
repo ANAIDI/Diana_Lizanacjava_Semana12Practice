@@ -1,0 +1,14 @@
+<form [formGroup]="formularioMatricula" (ngSubmit)="onSubmit()">
+    <label for="alumno">Alumno:</label>
+    <select id="alumno" formControlName="alumno">
+      <option *ngFor="let alumno of alumnos" [value]="alumno.id">{{ alumno.nombres }}</option>
+    </select>
+  
+    <label for="cursos">Cursos:</label>
+    <select id="cursos" formControlName="cursos" multiple>
+      <option *ngFor="let curso of cursos" [value]="curso.id">{{ curso.nombre }}</option>
+    </select>
+  
+    <button type="submit">Matricular</button>
+  </form>
+  

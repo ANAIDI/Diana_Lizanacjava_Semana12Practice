@@ -1,0 +1,29 @@
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Personaliza el color de fondo */
+  }
+  
+  .logo {
+    width: 100px; /* Ajusta el tamaño de tu logotipo */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white; /* Personaliza el color del texto */
+  }
+  .fill-remaining-space {
+    flex: 1;
+  }
+  

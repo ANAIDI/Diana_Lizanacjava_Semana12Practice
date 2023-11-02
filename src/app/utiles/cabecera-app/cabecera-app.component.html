@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">Inicio</button>
+    <button mat-menu-item routerLink="/alumnos">Alumnos</button>
+    <button mat-menu-item routerLink="/cursos">Cursos</button>
+    <button mat-menu-item routerLink="/matriculas">Matrículas</button>
+  </mat-menu>
+  <div class="menu-container">Menu</div>
+  <div class="fill-remaining-space"></div>
+  <img src="https://campus.cjavaperu.com/pluginfile.php/1/theme_mb2nl/logodark/1643121661/logo-cjava.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+</mat-toolbar>

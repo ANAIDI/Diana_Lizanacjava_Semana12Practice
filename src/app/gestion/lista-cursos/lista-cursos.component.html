@@ -1,0 +1,24 @@
+
+<button (click)="navigateToFormularioCurso()">Agregar Nuevo Curso</button>
+<!-- Resto de la lista de cursos -->
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Horas</th>
+        <th>Créditos</th>
+        <th>Categoría</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let curso of cursos">
+        <td>{{ curso.id }}</td>
+        <td>{{ curso.nombre }}</td>
+        <td>{{ curso.horas }}</td>
+        <td>{{ curso.creditos }}</td>
+        <td>{{ curso.categoria }}</td>
+      </tr>
+    </tbody>
+  </table>
